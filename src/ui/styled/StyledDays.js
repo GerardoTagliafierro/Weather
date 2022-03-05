@@ -49,12 +49,6 @@ export const StyledDays = styled(Days)`
                 height: auto;
             }
         }
-        .swiper-slide{
-            width: 100%;
-            @media only screen and (min-width: 768px) {
-                width: 33%;
-            }
-        }
         .slide-content{
             box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.17);
             margin: 0 15px;

@@ -22,8 +22,14 @@ const Days = ({className, days}) => {
                     <div className={"card active-" + activeTab}>
                         {activeTab === 0 ? (
                             <Swiper
-                                slidesPerView={"auto"}
-                                slidesPerGroup={"auto"}
+                                slidesPerView={1}
+                                slidesPerGroup={1}
+                                breakpoints={{
+                                    768: {
+                                      slidesPerView: 3,
+                                      slidesPerGroup: 3
+                                    },
+                                  }}
                             >
                                 { days && days.map((item, i) =>{
                                     const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
